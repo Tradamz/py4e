@@ -1,0 +1,1 @@
+#fruit[:] means the whole string

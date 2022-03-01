@@ -1,0 +1,17 @@
+minN = None
+maxN = None
+
+while True:
+	number = input('please submit number:')
+	if number == 'done':
+		print('Maximum is', maxN)
+		print('Minimum is', minN)
+		break
+	try:
+		number = int(number)
+		if maxN is None or number > maxN:
+			maxN = number
+		if minN is None or number < minN:
+			minN = number
+	except:
+		print('Invalid input')
